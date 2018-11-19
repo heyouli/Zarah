@@ -1,0 +1,717 @@
+/* ============ General Settings ============ */
+
+ * {
+   box-sizing: border-box;
+ }
+
+
+body {
+  margin-top: 0px;
+  padding-top: 0px;
+  padding: 0;
+  width:100%;
+  margin-top: 0;
+  /* make it look decent enough */
+  background: transparent;
+  color: #232323;
+  font-family: 'Century Gothic', "华文黑体", STHeiti, Helvetica, Arial, sans-serif;
+}
+
+.inner-page {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.page-section {
+  padding-bottom: 5%;
+}
+
+/* ============ Typography ============ */
+p {
+  font-size: 0.9em;
+  line-height: 2em;
+  letter-spacing: 0.007em;
+}
+
+a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #b71318;
+}
+
+
+a:active {
+  color: #b71318;
+}
+
+p.subhead {
+  font-size: 1.1em;
+  padding-top: 2%;
+  font-weight: bold;
+}
+
+#headline-event {
+  color: white;
+  margin-top: 120px;
+}
+
+/* ============ Navigation ============ */
+
+.logo-img {
+  position: absolute;
+  left: 50%;
+  margin-left: -40px;
+  margin-top: 0px;
+}
+
+.logo-ssc {
+  margin-left: 45%;
+  position: fixed;
+}
+
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 20px;
+  left: 10px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #b71318;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #b71318;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  position: absolute;
+  width: 110%;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 200px;
+
+  background: rgba(0, 0, 0, 0.5);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  height: 110vh;
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 3em;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+.index-nav {
+ position: relative;
+ width: 100%;
+ height:100%;
+}
+
+.index-navbar {
+  position: absolute;
+  z-index: 10;
+  color: transparent;
+  width: 100%;
+  margin-top: 150px;
+}
+
+a.index-text {
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: bold;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+
+/* ============ Sidebar ============ */
+
+.sidebar {
+  padding-left: 2%;
+  background-color: #f4f4f4;
+  width: 100%;
+  margin-top: 5;
+}
+
+.sidebar-img {
+  max-width: 80%;
+  background-color: #fffbfb;
+}
+
+.sidebar h2 {
+  text-transform: uppercase;
+  margin-bottom: 5%;
+  font-weight: bold;
+  padding-top: 2%;
+}
+
+/* ============ Index page ============ */
+.about-slide {
+  height: 100vh;
+}
+
+.site-content {
+  position: absolute;
+  width: 100%;
+}
+
+/* ============ Footer ============ */
+
+#footercontent {
+  background-color: white;
+  padding-left: 4%;
+  margin-bottom: 0;
+  vertical-align: middle;
+  display:flex;
+  width:100%;
+  padding-bottom: 0;
+}
+
+#footercontent a:hover {
+ background-color: none;
+ -webkit-tap-highlight-color:none;
+
+}
+
+.footer-text {
+  color: black;
+  font-size: 0.8em;
+}
+
+
+/* ============ About page ============ */
+#about {
+width: 100%;
+padding-right: 0;
+padding-left: 0;
+position: relative;
+margin-bottom: 2%;
+}
+
+
+.headline-date {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.headline-about {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.5em;
+  letter-spacing: 0em;
+}
+
+.about-main {
+  padding-right: 2%;
+}
+
+.about-slides {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.large_screen_portfolio {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7%;
+}
+
+.title-img {
+width: 100%;
+margin-bottom: 3%;
+}
+
+.aboutimg {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+#aboutintro {
+  font-size: 2.8em;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.info {
+  position: absolute;
+  font-size: 2em;
+  color: grey;
+  text-align: center;
+  text-transform:uppercase;
+  font-weight:400;
+  line-height:1.6;
+  display: none;
+  background: rgba(255,255,255, 0.8);
+  top: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.proj-title {
+  max-width: 80%;
+  font-weight:bold;
+  color: black;
+  line-height: 1.5em;
+  font-size: 0.7em;
+  position: relative;
+  transform: translateY(-90%);
+  transform: translateX(5%);
+
+}
+
+/* ============ Events page ============ */
+
+.event-title {
+  padding-bottom: 1em;
+}
+
+.event-intro {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.events-body {
+   background-image: url("../img/Zarah.background.jpg");
+   width: 100%;
+}
+
+#events {
+ width:100%;
+ position: relative;
+}
+
+.event-img {
+  background-color: transparent!important;
+  margin-top: 0%;
+}
+
+.event-overview {
+  margin-top: 2%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.events-date {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 0.8em;
+  height: 30px;
+  padding: 1%;
+}
+
+.events-name {
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  height: 120px;
+}
+
+.eventpage-img {
+  width: 500px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.work-img {
+  display: block; /* needed to center the element with margin */
+  max-width: 800px; /* needs to be set to the width of your image files if they are relatively small */
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.work-img2 {
+  display: block; /* needed to center the element with margin */
+  max-width: 800px; /* needs to be set to the width of your image files if they are relatively small */
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.event-page {
+  margin-right: 4%;
+  margin-left: 4%;
+}
+
+.event-box {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  padding: 1em;
+  line-height: 2;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+
+/* ============ Photography page ============ */
+
+#accordion .panel-group {
+  float: left;
+}
+
+#photography .panel {
+  border: none;
+  box-shadow: none;
+  margin-left: 3%;
+  float: left;
+}
+
+#photography .panel-body {
+  background-color: #d9dbde;
+  border-style: none;
+  padding-top: 3%;
+  text-indent: 0;
+}
+
+#photography .header h1 {
+  margin-bottom: 0.5%;
+}
+
+.workshow {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5%;
+}
+
+/* ============ News  ============ */
+.food-captions {
+  line-height: 1.5em;
+  font-size: 0.8em;
+  letter-spacing: 0.012em;
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+/* ============ Contact page ============ */
+.wechat-qr {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: 10%;
+}
+
+.contact-item {
+  padding-bottom: 3%;
+}
+
+.modal-backdrop {
+   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: transparent!important;
+  border:0px;
+}
+
+button.close {
+  color: #b71318;
+  font-size: 3em;
+  text-shadow: 0 0px 0;
+  opacity: 1;
+}
+
+.map {
+  margin-top: 5%;
+  height: 400px;
+  width: 100%;
+}
+
+.contact-info {
+  margin-top: 3%;
+  padding-top: 1%;
+  padding-left: 4%;
+  padding-right: 4%;
+  float:left;
+  width: 100%;
+  background-color: #c2bebe;
+}
+
+.fa-instagram {
+  background: none!important;
+  color: black!important;
+}
+
+.fab {
+  font-size: 1.8em;
+  padding-right: 0.8em;
+}
+
+#opening-hours {
+  text-align: left;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.form_row_one {
+  width: 49.5%;
+  display: inline-block;
+}
+
+.table>tbody>tr>td {
+  border-top: 0px!important;
+}
+
+label {
+  margin-bottom: 1%;
+  margin-top: 3%;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+.socialmedia img {
+  width: 30px;
+  height:30px;
+}
+
+.contact-title {
+  font-weight: bold;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+
+/*== Media Queries ==*/
+@media only screen and (max-width: 768px) {
+  .contact-item {
+    padding-bottom: 5%;
+    text-align: center;
+  }
+
+  .eventpage-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .headline-date {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .sidebar {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sidebar-img {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .sidebar h2 {
+    text-align: center;
+  }
+  .event-overview {
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  .proj-title {
+    display: none;
+  }
+
+  .info {
+    display: none!important;
+  }
+
+  .logo-img {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    margin-left: -35px;
+  }
+
+  .title-img {
+  width: 100%;
+  margin-bottom: 8%;
+  }
+
+  #menu li {
+    padding: 10px 0;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+
+  .headline-about {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.8em;
+    letter-spacing: 0em;
+    margin-bottom: 5%;
+    text-align: left;
+  }
+
+  p {
+    font-size: 0.8em;
+    line-height: 1.9em;
+    letter-spacing: 0.007em;
+  }
+
+  .page-section {
+    padding-bottom: 8%;
+  }
+
+  .event-intro {
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+
+  .header-ssc {
+    margin-bottom: 5%;
+  }
+
+  #menuToggle {
+    background-color: #fff;
+    height: 60px;
+    top:0;
+    left:0px;
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+
+  .logo-img {
+    position: absolute;
+    z-index: 10;
+    top:50px;
+    left: 50%;
+    margin-left: -35px;
+    width:
+  }
+
+  .logo-ssc {
+    top:0;
+    left: 50%;
+    margin-left: -25px;
+    padding-top: 5px;
+  }
+
+  #headline-event {
+    color: white;
+    margin-top: 80px;
+  }
+
+  .wechatlink-ssc {
+    display: inline!important;
+  }
+
+  .container.event-overview {
+    width:auto;
+  }
+
+  .inner-page {
+    margin-top: 80px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .wechatlink-lsc {
+    display: inline!important;
+  }
+}
