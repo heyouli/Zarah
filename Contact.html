@@ -89,7 +89,14 @@
     <div class="row inner-page">
       <div class="col-md-8 col-sm-12 about-main">
         <h1 class="headline-about">Contact us 联系我们 </h1>
-        <p class="copy-en">Want to organize an event at Zarah? Book a table or just want to say Hi?</br> Send us an Email to: <a href="mailto:info@cafezarah.com"><span aria-hidden="true"></span>info@cafezarah.com</p></a>
+        <p class="copy-en">Want to organize an event at Zarah? Book a table or just want to say Hi?</br> Use the form below or send us an Email to: <a href="mailto:info@cafezarah.com"><span aria-hidden="true"></span>info@cafezarah.com</p></a>
+        <div class="form-group">
+          <form class="email" method="POST" action="https://formspree.io/info@cafezarah.com">
+            <input type="email" name="email" class="email-box" placeholder="Your email">
+            <textarea name="message" class="email-textbox" placeholder="Your message"></textarea>
+            <button type="submit">Send</button>
+                </form>
+            </div>
       </div>
       <div class="col-lg-4 col-md-12 map" id="mapid">
       </div><!-- end Map-->

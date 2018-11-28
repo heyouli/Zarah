@@ -1,0 +1,15 @@
+1. Navigation: Eventuell veränderte Ansicht für Desktop, Verbesserung der Animation für Mobile 
+
+2. Optimierung des Startseiten Bildes, Navigation vor und zurück
+
+3. Startseite ändern: lange Seite mit einer Übersicht der wichtigsten Inhalte (news, Öffnungszeiten, events kurz, rent us kurz, About us kurz,  Menu kurz).
+    
+4. News Teaser Platzierung entscheiden: Vielleicht ist es auch ein weiterer Menüpunkt? 
+
+5. Footer Menü weg
+
+6. Events Teilung zwischen Regular und one-time events. Eventuell Past events? 
+
+7. Optimierung der Seiten "About us" und "Rent us"
+
+6. Contact optimierung

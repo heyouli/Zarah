@@ -481,7 +481,27 @@ margin-bottom: 3%;
 }
 
 /* ============ Contact page ============ */
-.wechat-qr {
+  .email{
+    display:inline;
+  }
+
+  .email-box{
+    width: 50%;
+    margin-bottom: 1em;
+    font-size: 0.8em;
+    padding: 0.5em;
+  }
+
+  .email-textbox{
+    width: 90%;
+    height: 10em;
+    font-size: 0.8em;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    margin-right: 2em;
+  }
+
+  .wechat-qr {
   position: absolute;
   z-index: 10;
   left: 50%;
