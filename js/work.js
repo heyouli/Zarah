@@ -18,6 +18,12 @@ var works = [
   url: "Events_Exhibition.html"
   },
   {
+  date: "07.12.2018, 7pm until late 直至深夜",
+  title: "冬季饮品派对</br>Winter drinks launch party",
+  pic: "img/Events/Winterdrinksparty_web.jpg",
+  url: "Events_winterdrinkslaunch.html"
+  },
+  {
     date: "Sundays 每周日 10am-3pm",
     title: "SUNDAY BRUNCH</br>周日早午餐",
     pic: "img/Events/Brunch_Web.jpg",
