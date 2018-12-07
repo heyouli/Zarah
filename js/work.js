@@ -1,7 +1,13 @@
 var works = [
   {
+  date: "16.12.2018, 10am-3pm",
+  title: "Festive Christmas Brunch</br>喜庆圣诞早午自助餐",
+  pic: "img/Events/Christmasbrunch_web.jpg",
+  url: "Events_christmasbrunch.html"
+  },
+  {
   date: "07.12.2018, 7pm until late 直至深夜",
-  title: "冬季饮品派对</br>Winter drinks launch party",
+  title: "Winter drinks launch party</br>冬季饮品派对",
   pic: "img/Events/Winterdrinksparty_web.jpg",
   url: "Events_winterdrinkslaunch.html"
   },
