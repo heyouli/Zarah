@@ -1,9 +1,9 @@
 var works = [
   {
-    date: "01.12.2018, 11am-4pm",
-    title: "Give a present Christmas Market</br>赠送礼物圣诞市场",
-    pic: "img/Events/Web_Giveapresent.jpg",
-    url: "Events_Christmasmarket.html"
+  date: "07.12.2018, 7pm until late 直至深夜",
+  title: "冬季饮品派对</br>Winter drinks launch party",
+  pic: "img/Events/Winterdrinksparty_web.jpg",
+  url: "Events_winterdrinkslaunch.html"
   },
   {
     date: "From 17.11. every night after 6pm</br>11月17日起，每晚6点开始",
@@ -18,12 +18,6 @@ var works = [
   url: "Events_Exhibition.html"
   },
   {
-  date: "07.12.2018, 7pm until late 直至深夜",
-  title: "冬季饮品派对</br>Winter drinks launch party",
-  pic: "img/Events/Winterdrinksparty_web.jpg",
-  url: "Events_winterdrinkslaunch.html"
-  },
-  {
     date: "Sundays 每周日 10am-3pm",
     title: "SUNDAY BRUNCH</br>周日早午餐",
     pic: "img/Events/Brunch_Web.jpg",
@@ -36,9 +30,9 @@ var works = [
     url: "Events_Recordnight.html"
   },
   {
-    date: "1st MON OF THE MONTH, 3pm",
+    date: "Starting again in March!",
     title: "POP-UP YOGA 办公瑜伽",
-    pic: "img/Events/PopupYoga_Web.jpg",
-    url: "Events_Popupyoga.html"
+    pic: "img/Events/PopupYoga_Web.paused.jpg",
+    url: ""
   },
 ]
