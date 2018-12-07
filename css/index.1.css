@@ -256,6 +256,12 @@ a.index-text {
     object-fit: cover;
 }
 
+.about-img img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
 .site-content {
   position: absolute;
   width: 100%;
